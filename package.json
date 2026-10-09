@@ -1,0 +1,20 @@
+{
+  "name": "sl_pom",
+  "version": "1.0.0",
+  "description": "SL_POM - Playwright + TypeScript Page Object Model framework (SauceDemo)",
+  "scripts": {
+    "test": "playwright test --project=chromium",
+    "test:headed": "playwright test --project=chromium --headed",
+    "test:chrome": "playwright test --project=chromium",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --project=chromium --debug",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen https://www.saucedemo.com",
+    "test:pom": "playwright test tests/saucedemo-pom.spec.ts --project=chromium-slow --workers=1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
